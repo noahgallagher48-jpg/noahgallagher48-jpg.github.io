@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Abba Photo</title>
+<meta name=robots content=noindex><style>
+/* DIRECTION 1: DUSK AT CAMP. Ground = the 9:45pm sky in his star frames, not
+   black. Accent = firelight. Masthead = Futura, the face of camp signage.
+   Signature: the page loads the way eyes adjust after lights-out. */
+:root{--sky:#0E2430;--treeline:#071219;--ember:#E39A3B;--emberHi:#F2BA6B;
+      --moon:#EDF2EF;--smoke:#8FA6AC;--line:rgba(237,242,239,.12)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--treeline);color:var(--moon);font-family:Charter,Georgia,serif;
+     font-size:16px;line-height:1.6}
+.futura{font-family:"Futura","Futura Medium",Avenir,Helvetica,sans-serif}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;
+    align-items:center;padding:18px 28px;mix-blend-mode:screen}
+nav .brand{font-family:Futura,Avenir,sans-serif;font-weight:500;letter-spacing:.34em;
+    font-size:13px;color:var(--moon);text-decoration:none}
+nav .links a{font-family:Futura,Avenir,sans-serif;font-size:11px;letter-spacing:.22em;
+    color:var(--smoke);text-decoration:none;margin-left:26px;text-transform:uppercase}
+nav .links a:hover,nav .links a:focus{color:var(--emberHi)}
+.hero{position:relative;height:100vh;min-height:640px;overflow:hidden;background:#000}
+.hero img{width:100%;height:100%;object-fit:cover;display:block;
+    animation:adjust 2.8s ease-out both}
+@keyframes adjust{from{opacity:0;transform:scale(1.03)}to{opacity:1;transform:none}}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,18,25,.82) 0%,rgba(7,18,25,.12) 42%,transparent 70%)}
+.hero .say{position:absolute;left:0;right:0;bottom:0;padding:0 28px 54px;max-width:860px;
+    animation:rise 1.2s 1.4s ease-out both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero .eyebrow{font-family:Futura,Avenir,sans-serif;font-size:11px;letter-spacing:.3em;
+    text-transform:uppercase;color:var(--ember);margin-bottom:14px}
+.hero h1{font-weight:400;font-size:clamp(24px,3.6vw,40px);line-height:1.3;letter-spacing:.002em}
+.hero .cap{margin-top:14px;color:var(--smoke);font-size:13px;font-style:italic}
+.who{background:var(--sky);padding:76px 28px}
+.who p{max-width:640px;margin:0 auto;text-align:center;font-size:clamp(18px,2.2vw,23px);
+    line-height:1.55;color:var(--moon)}
+.strip{position:relative;min-height:78vh;overflow:hidden;display:flex;align-items:flex-end}
+.strip img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.strip .veil{position:absolute;inset:0;background:linear-gradient(100deg,rgba(7,18,25,.78) 0%,rgba(7,18,25,.25) 46%,transparent 72%)}
+.strip .info{position:relative;z-index:1;padding:44px 28px;max-width:560px}
+.strip .k{font-family:Futura,Avenir,sans-serif;font-size:11px;letter-spacing:.28em;
+    text-transform:uppercase;color:var(--ember);margin-bottom:10px}
+.strip h2{font-weight:400;font-size:clamp(26px,3vw,36px);margin-bottom:10px}
+.strip .fact{color:var(--moon);opacity:.85;font-size:15.5px;max-width:46ch}
+.strip a.go{display:inline-block;margin-top:18px;font-family:Futura,Avenir,sans-serif;
+    font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--emberHi);
+    text-decoration:none;border-bottom:1px solid rgba(242,186,107,.5);padding-bottom:4px}
+.arrives{background:var(--sky);padding:84px 28px}
+.arrives .in{max-width:820px;margin:0 auto}
+.arrives .k{font-family:Futura,Avenir,sans-serif;font-size:11px;letter-spacing:.28em;
+    text-transform:uppercase;color:var(--ember);margin-bottom:26px}
+.arrives dl{display:grid;grid-template-columns:1fr 1fr;gap:30px 44px}
+.arrives dt{font-size:19px;margin-bottom:6px}
+.arrives dd{color:var(--smoke);font-size:15px;line-height:1.6}
+.terms{background:var(--treeline);border-top:1px solid var(--line);padding:44px 28px;text-align:center}
+.terms p{font-family:Futura,Avenir,sans-serif;font-size:12px;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--smoke)}
+.terms b{color:var(--moon);font-weight:500}
+footer{background:var(--treeline);padding:34px 28px 60px;text-align:center;color:var(--smoke);font-size:13px}
+footer a{color:var(--moon)}
+@media (max-width:680px){.arrives dl{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.hero img,.hero .say{animation:none}}
+</style></head><body>
+<nav><a class=brand href="#">ABBA PHOTO</a>
+ <span class=links><a href="#">Work</a><a href="#">Process</a><a href="#">Services</a><a href="#">About</a><a href="#">Contact</a></span></nav>
+
+<header class=hero>
+  <img src="https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R110.jpg" alt="The Milky Way over the basketball court at Ramah in the Rockies">
+  <div class=veil></div>
+  <div class=say>
+    <p class=eyebrow>Photography for mission-driven organizations</p>
+    <h1>I make uniquely excellent photos of what is important to you and I show you how to use them.</h1>
+    <p class=cap>The Milky Way over the basketball court. Sedalia, Colorado.</p>
+  </div>
+</header>
+
+<section class=who>
+  <p>I work with organizations and individuals whose work depends on being seen and felt.</p>
+</section>
+
+<section class=strip>
+  <img src="https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-63.jpg" alt="Campers lined along the bridge at Camp Interlaken">
+  <div class=veil></div>
+  <div class=info>
+    <p class=k>Camp Interlaken JCC · Wisconsin</p>
+    <h2>Four days in residence</h2>
+    <p class=fact>The summer library, delivered with a field guide the camp keeps, and two hardcover book layouts.</p>
+    <a class=go href="interlaken.html">See the engagement</a>
+  </div>
+</section>
+
+<section class=strip>
+  <img src="https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R112.jpg" alt="First light on the ridge above Ramah in the Rockies">
+  <div class=veil></div>
+  <div class=info>
+    <p class=k>Ramah in the Rockies · Colorado</p>
+    <h2>Six days in the Rockies</h2>
+    <p class=fact>First light on the ridge above camp. A 162-frame guide, a donor book, prints hanging in their guest rooms.</p>
+    <a class=go href="#">See the engagement</a>
+  </div>
+</section>
+
+<section class=strip>
+  <img src="https://www.abba-photo.com/camp-kingswood/img/present/kwood819-52.jpg" alt="Kabbalat Shabbat outdoors at Camp Kingswood">
+  <div class=veil></div>
+  <div class=info>
+    <p class=k>Camp Kingswood · Maine</p>
+    <h2>Five days on site</h2>
+    <p class=fact>Kabbalat Shabbat with the whole camp outdoors. The full library inside two weeks, sized for print.</p>
+    <a class=go href="#">See the engagement</a>
+  </div>
+</section>
+
+<section class=arrives>
+  <div class=in>
+    <p class=k>What arrives</p>
+    <dl>
+      <dt>A library, organized</dt><dd>By what each image is for, not the order it was shot.</dd>
+      <dt>A guide the team keeps</dt><dd>The largest honest print size on every frame, in sizes you can order without a custom cut.</dd>
+      <dt>Files that carry their facts</dt><dd>Your organization, the date, the place and the credit, searchable inside every file.</dd>
+      <dt>Books through the lab</dt><dd>Layouts designed here, printed at press cost.</dd>
+    </dl>
+  </div>
+</section>
+
+<section class=terms><p>Day, from <b>$1,500</b> &nbsp;·&nbsp; Residency, three nights, from <b>$5,000</b></p></section>
+<footer>Noah Gallagher · <a href="mailto:noah@abba-photo.com">noah@abba-photo.com</a></footer>
+</body></html>
