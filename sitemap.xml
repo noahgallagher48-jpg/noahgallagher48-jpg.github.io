@@ -2,85 +2,288 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.abba-photo.com/about/</loc>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R148.jpg</image:loc>
+      <image:caption>Campers walking the trail into camp</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.abba-photo.com/</loc>
     <image:image>
-      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/R106.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-17.jpg</image:loc>
-      <image:caption>The Milky Way over a camp waterfront</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/R024.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.abba-photo.com/ceremony-is-medicine/img/NKatzWeb2-22.jpg</image:loc>
-      <image:caption>A tipi glowing at night in the woods, silhouettes inside</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-85.jpg</image:loc>
-      <image:caption>A full rainbow over camp, the camp&#x27;s name beneath it</image:caption>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R110.jpg</image:loc>
+      <image:caption>The Milky Way over the basketball court at Ramah in the Rockies</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-63.jpg</image:loc>
-      <image:caption>The whole camp crossing the bridge at Camp Interlaken</image:caption>
+      <image:caption>Campers lined along the bridge at Camp Interlaken</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-91.jpg</image:loc>
-      <image:caption>Sunset over the lake</image:caption>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R112.jpg</image:loc>
+      <image:caption>First light on the ridge above Ramah in the Rockies</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-209.jpg</image:loc>
-      <image:caption>The bridge in morning light</image:caption>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-52.jpg</image:loc>
+      <image:caption>Kabbalat Shabbat outdoors at Camp Kingswood</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-142.jpg</image:loc>
-      <image:caption>Hydro-bikes on the beach at dusk</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-123.jpg</image:loc>
-      <image:caption>Makom Halev, the outdoor prayer space</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/R026.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/R100.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/R121.jpg</image:loc>
+      <image:loc>https://www.abba-photo.com/img/cyj/CYJMID-25.jpg</image:loc>
+      <image:caption>Shabbat whites at CYJ Midwest</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.abba-photo.com/masliansky-neighborhood-session/img/present/F17.jpg</image:loc>
-      <image:caption>On the platform at the Howard station</image:caption>
+      <image:caption>Aaron Masliansky at the Metra platform</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.abba-photo.com/masliansky-neighborhood-session/img/present/F05.jpg</image:loc>
+      <image:loc>https://www.abba-photo.com/ceremony-is-medicine/img/NKatzWeb2-22.jpg</image:loc>
+      <image:caption>The tipi at dusk</image:caption>
     </image:image>
+  </url>
+  <url>
+    <loc>https://www.abba-photo.com/process/</loc>
     <image:image>
-      <image:loc>https://www.abba-photo.com/masliansky-neighborhood-session/img/present/F07.jpg</image:loc>
+      <image:loc>https://www.abba-photo.com/img/process/use-guide.jpg</image:loc>
+      <image:caption>The image guide: every frame with its labels and print sizes</image:caption>
     </image:image>
+  </url>
+  <url>
+    <loc>https://www.abba-photo.com/services/</loc>
+  </url>
+  <url>
+    <loc>https://www.abba-photo.com/work/ceremony/</loc>
     <image:image>
-      <image:loc>https://www.abba-photo.com/masliansky-neighborhood-session/img/present/F01.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.abba-photo.com/masliansky-neighborhood-session/img/present/F04.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.abba-photo.com/ceremony-is-medicine/img/NKatzWeb2-6.jpg</image:loc>
-      <image:caption>Two men laying the first stones of the wheel</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.abba-photo.com/ceremony-is-medicine/img/NKatzWeb2-13.jpg</image:loc>
-      <image:caption>The finished altar, daffodils at its center</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.abba-photo.com/ceremony-is-medicine/img/NKatzWeb2-24.jpg</image:loc>
-      <image:caption>The fire being lit inside the circle at night</image:caption>
+      <image:loc>https://www.abba-photo.com/ceremony-is-medicine/img/NKatzWeb2-22.jpg</image:loc>
+      <image:caption>Ceremony Is Medicine with Naomi Katz</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.abba-photo.com/ceremony-is-medicine/img/NKatzWeb2-16.jpg</image:loc>
-      <image:caption>Flowers placed along the stone ring by firelight</image:caption>
+      <image:caption>Ceremony Is Medicine with Naomi Katz</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ceremony-is-medicine/img/NKatzWeb2-19.jpg</image:loc>
+      <image:caption>Ceremony Is Medicine with Naomi Katz</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ceremony-is-medicine/img/NKatzWeb2-12.jpg</image:loc>
+      <image:caption>Ceremony Is Medicine with Naomi Katz</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ceremony-is-medicine/img/NKatzWeb2-10.jpg</image:loc>
+      <image:caption>Ceremony Is Medicine with Naomi Katz</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ceremony-is-medicine/img/NKatzWeb2-26.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.abba-photo.com/work/cyj/</loc>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/img/cyj/CYJMID-25.jpg</image:loc>
+      <image:caption>CYJ Midwest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/img/cyj/CYJMID-22.jpg</image:loc>
+      <image:caption>CYJ Midwest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/img/cyj/CYJMID-15.jpg</image:loc>
+      <image:caption>CYJ Midwest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/img/cyj/CYJMID-18.jpg</image:loc>
+      <image:caption>CYJ Midwest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/img/cyj/CYJMID-12.jpg</image:loc>
+      <image:caption>CYJ Midwest</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/img/cyj/CYJMID-10.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.abba-photo.com/work/interlaken/</loc>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-17.jpg</image:loc>
+      <image:caption>Camp Interlaken at night</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-63.jpg</image:loc>
+      <image:caption>Campers along the bridge</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-116.jpg</image:loc>
+      <image:caption>The waterfront from above</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-102.jpg</image:loc>
+      <image:caption>Camp Interlaken</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-143.jpg</image:loc>
+      <image:caption>Camp Interlaken</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-19.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-142.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-91.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-89.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-16.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-22.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-66.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.abba-photo.com/work/kingswood/</loc>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-104.jpg</image:loc>
+      <image:caption>Camp Kingswood</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-31.jpg</image:loc>
+      <image:caption>Camp Kingswood</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-108.jpg</image:loc>
+      <image:caption>Camp Kingswood</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-110.jpg</image:loc>
+      <image:caption>Camp Kingswood</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-52.jpg</image:loc>
+      <image:caption>Camp Kingswood</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-13.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-42.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-35.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-34.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-10.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-53.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-17.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-74.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-50.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-118.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/camp-kingswood/img/present/kwood819-2.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.abba-photo.com/work/masliansky/</loc>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/masliansky-neighborhood-session/img/present/F17.jpg</image:loc>
+      <image:caption>Aaron Masliansky in Chicago</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/masliansky-neighborhood-session/img/present/F08.jpg</image:loc>
+      <image:caption>Aaron Masliansky in Chicago</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/masliansky-neighborhood-session/img/present/F13.jpg</image:loc>
+      <image:caption>Aaron Masliansky in Chicago</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/masliansky-neighborhood-session/img/present/F01.jpg</image:loc>
+      <image:caption>Aaron Masliansky in Chicago</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/masliansky-neighborhood-session/img/present/F05.jpg</image:loc>
+      <image:caption>Aaron Masliansky in Chicago</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/masliansky-neighborhood-session/img/present/F03.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.abba-photo.com/work/ramah/</loc>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R063.jpg</image:loc>
+      <image:caption>Ramah in the Rockies</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R002.jpg</image:loc>
+      <image:caption>Ramah in the Rockies</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R112.jpg</image:loc>
+      <image:caption>Ramah in the Rockies</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R145.jpg</image:loc>
+      <image:caption>Ramah in the Rockies</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R090.jpg</image:loc>
+      <image:caption>Ramah in the Rockies</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R143.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R146.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R148.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R150.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R152.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R156.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R164.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R101.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R144.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R155.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R110.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R066.jpg</image:loc>
     </image:image>
   </url>
 </urlset>

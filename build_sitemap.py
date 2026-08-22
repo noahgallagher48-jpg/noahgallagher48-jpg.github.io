@@ -21,11 +21,16 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 BASE = "https://www.abba-photo.com"
 
 def pages():
-    for p in sorted(glob.glob(os.path.join(HERE, "*.html"))):
+    for p in sorted(glob.glob(os.path.join(HERE, "*.html")) +
+                    glob.glob(os.path.join(HERE, "*", "index.html")) +
+                    glob.glob(os.path.join(HERE, "work", "*", "index.html"))):
+        if os.sep + "preview" + os.sep in p:
+            continue
         src = open(p).read()
         if re.search(r'name=["\']?robots["\']?[^>]*noindex', src, re.I):
             continue
-        yield os.path.basename(p), src
+        rel = os.path.relpath(p, HERE)
+        yield rel, src
 
 def images(src):
     seen, out = set(), []
@@ -47,7 +52,12 @@ def images(src):
 def build():
     urls = []
     for name, src in pages():
-        loc = BASE + "/" + ("" if name == "index.html" else name)
+        if name == "index.html":
+            loc = BASE + "/"
+        elif name.endswith("/index.html"):
+            loc = BASE + "/" + name[:-len("index.html")]
+        else:
+            loc = BASE + "/" + name
         imgs = images(src)
         block = [f"  <url>\n    <loc>{loc}</loc>"]
         for u, cap in imgs:
