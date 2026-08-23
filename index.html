@@ -20,8 +20,10 @@ nav .links a{font-family:Futura,Avenir,sans-serif;font-size:11px;letter-spacing:
     color:var(--smoke);text-decoration:none;margin-left:26px;text-transform:uppercase}
 nav .links a:hover,nav .links a:focus{color:var(--emberHi)}
 .hero{position:relative;height:100vh;min-height:640px;overflow:hidden;background:#000}
-.hero img{width:100%;height:100%;object-fit:cover;display:block;
-    animation:adjust 2.8s ease-out both}
+.hero img.hs{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    opacity:0;transition:opacity 1600ms ease}
+.hero img.hs.on{opacity:1}
+.hero img.hs:first-of-type{animation:adjust 2.8s ease-out both}
 @keyframes adjust{from{opacity:0;transform:scale(1.03)}to{opacity:1;transform:none}}
 .hero .veil{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,18,25,.82) 0%,rgba(7,18,25,.12) 42%,transparent 70%)}
 .hero .say{position:absolute;left:0;right:0;bottom:0;padding:0 28px 54px;max-width:860px;
@@ -36,6 +38,7 @@ nav .links a:hover,nav .links a:focus{color:var(--emberHi)}
     line-height:1.55;color:var(--moon)}
 .strip{position:relative;min-height:78vh;overflow:hidden;display:flex;align-items:flex-end}
 .strip img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.strip img.pt{object-position:50% 12%}
 .strip .veil{position:absolute;inset:0;background:linear-gradient(100deg,rgba(7,18,25,.78) 0%,rgba(7,18,25,.25) 46%,transparent 72%)}
 .strip .info{position:relative;z-index:1;padding:44px 28px;max-width:560px}
 .strip .k{font-family:Futura,Avenir,sans-serif;font-size:11px;letter-spacing:.28em;
@@ -64,13 +67,16 @@ footer a{color:var(--moon)}
 <nav><a class=brand href="#">ABBA PHOTO</a>
  <span class=links><a href="#">Work</a><a href="/process/">Process</a><a href="/services/">Services</a><a href="/about/">About</a><a href="mailto:noah@abba-photo.com">Contact</a></span></nav>
 
-<header class=hero>
-  <img src="https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R110.jpg" alt="The Milky Way over the basketball court at Ramah in the Rockies">
+<header class=hero id=hero>
+  <img class="hs on" src="https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R110.jpg" alt="The Milky Way over the basketball court at Ramah in the Rockies">
+  <img class=hs src="https://www.abba-photo.com/camp-kingswood/img/present/kwood819-104.jpg" alt="The Milky Way over the treeline at Camp Kingswood">
+  <img class=hs src="https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-17.jpg" alt="The waterfront at Camp Interlaken under the stars">
+  <img class=hs src="https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R063.jpg" alt="The flags and the court under the Milky Way">
   <div class=veil></div>
   <div class=say>
     <p class=eyebrow>Photography for mission-driven organizations</p>
     <h1>I make uniquely excellent photos of what is important to you and I show you how to use them.</h1>
-    <p class=cap>The Milky Way over the basketball court. Sedalia, Colorado.</p>
+    <p class=cap id=herocap>The Milky Way over the basketball court. Sedalia, Colorado.</p>
   </div>
 </header>
 
@@ -111,19 +117,9 @@ footer a{color:var(--moon)}
   </div>
 </section>
 
-<section class=strip>
-  <img src="/img/cyj/CYJMID-25.jpg" alt="Shabbat whites at CYJ Midwest">
-  <div class=veil></div>
-  <div class=info>
-    <p class=k>CYJ Midwest · Training</p>
-    <h2>The camp's own media team, trained</h2>
-    <p class=fact>Shooting side by side, then leaving behind the manual their team now works from.</p>
-    <a class=go href="/work/cyj/">See the engagement</a>
-  </div>
-</section>
 
 <section class=strip>
-  <img src="https://www.abba-photo.com/masliansky-neighborhood-session/img/present/F17.jpg" alt="Aaron Masliansky at the Metra platform">
+  <img class=pt src="https://www.abba-photo.com/masliansky-neighborhood-session/img/present/F08.jpg" alt="Aaron Masliansky at his listing sign">
   <div class=veil></div>
   <div class=info>
     <p class=k>Aaron Masliansky · Chicago</p>
@@ -163,5 +159,15 @@ footer a{color:var(--moon)}
 (function(){var h=location.hash.replace('#','');
 if(h==='services'||h==='about')location.replace('/'+h+'/');
 if(h==='contact')location.replace('mailto:noah@abba-photo.com');})();
+</script>
+<script>
+(function(){var hs=document.querySelectorAll('#hero .hs'),cap=document.getElementById('herocap'),
+caps=["The Milky Way over the basketball court. Sedalia, Colorado.",
+"Two hours past lights-out. Bridgton, Maine.",
+"The camp cut its own lights for the stars. Eagle River, Wisconsin.",
+"The flags at night. Sedalia, Colorado."],i=0;
+hs.forEach(function(im,k){if(k>0)(new Image()).src=im.src;});
+setInterval(function(){hs[i].classList.remove('on');i=(i+1)%hs.length;
+hs[i].classList.add('on');cap.textContent=caps[i];},6500);})();
 </script>
 </body></html>
