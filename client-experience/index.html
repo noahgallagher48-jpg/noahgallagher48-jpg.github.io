@@ -1,0 +1,76 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noindex,nofollow">
+<link rel=canonical href="https://www.abba-photo.com/client-experience/">
+<title>The Client Experience · Abba Photo</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#071219;color:#EDE9E1;
+ font-family:"Futura","Futura Medium",Avenir,Helvetica,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+header{padding:46px 0 10px;text-align:center}
+.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;opacity:.6;margin:0 0 10px}
+h1{font-weight:500;font-size:clamp(26px,4.4vw,40px);margin:0;letter-spacing:.01em}
+.lede{max-width:58ch;margin:16px auto 0;opacity:.75;font-size:15.5px;line-height:1.6;
+ font-family:Charter,Georgia,serif}
+.tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:26px 0 18px}
+.tab{background:transparent;border:1px solid rgba(237,233,225,.3);color:#EDE9E1;
+ border-radius:24px;padding:10px 22px;font:500 14px inherit;cursor:pointer;letter-spacing:.01em}
+.tab[aria-selected=true]{background:#EDE9E1;border-color:#EDE9E1;color:#071219}
+.cap{max-width:1180px;margin:0 auto;padding:0 22px 12px;text-align:center;font-size:13px;
+ opacity:.6;font-family:Charter,Georgia,serif}
+.stage{max-width:1280px;margin:0 auto;padding:0 14px 40px}
+.frame{width:100%;height:calc(100vh - 60px);min-height:640px;border:1px solid rgba(237,233,225,.16);
+ border-radius:8px;background:#fff}
+.pane{display:none}
+.pane.on{display:block}
+footer{padding:0 22px 34px;text-align:center;font-size:12.5px;opacity:.5}
+footer a{color:#EDE9E1}
+</style></head><body>
+
+<header class=wrap>
+ <p class=eyebrow>Abba Photo</p>
+ <h1>What clients receive</h1>
+ <p class=lede>Three engagements from Summer 2026, exactly as each camp opens them today,
+ and one page clients never share: the hub that runs the engagement while it is live.</p>
+</header>
+
+<div class=tabs role=tablist>
+ <button class=tab role=tab data-p=kw aria-selected=true>Camp Kingswood</button>
+ <button class=tab role=tab data-p=il aria-selected=false>Camp Interlaken</button>
+ <button class=tab role=tab data-p=rr aria-selected=false>Ramah in the Rockies</button>
+ <button class=tab role=tab data-p=hub aria-selected=false>Inside an engagement</button>
+</div>
+
+<p class=cap id=cap>The delivery the camp opens: every photograph in two sizes, the picks leading, the book built on the page.</p>
+
+<div class=stage>
+ <div class="pane on" id=p-kw><iframe class=frame loading=lazy src="/camp-kingswood/delivery.html" title="Camp Kingswood delivery"></iframe></div>
+ <div class=pane id=p-il><iframe class=frame loading=lazy title="Camp Interlaken delivery" data-src="/interlaken-campscapes/delivery.html"></iframe></div>
+ <div class=pane id=p-rr><iframe class=frame loading=lazy title="Ramah in the Rockies field guide" data-src="/ramah-rockies-guide/"></iframe></div>
+ <div class=pane id=p-hub><iframe class=frame loading=lazy title="A mid-engagement hub, example" data-src="hub-example.html"></iframe></div>
+</div>
+
+<footer>Photographs by Noah Gallagher · <a href="https://www.abba-photo.com">abba-photo.com</a></footer>
+
+<script>
+var CAPS={
+ kw:"The delivery the camp opens: every photograph in two sizes, the picks leading, the book built on the page.",
+ il:"The Interlaken delivery: organized by what each image is for, with the community favorites vote.",
+ rr:"The Ramah field guide: four movements, print guidance on every frame, the book made on the page.",
+ hub:"An example, details fictional. The living page a client's team reads while the residency is running: the goal, the schedule, the sky, the notes."};
+document.querySelectorAll('.tab').forEach(function(t){
+ t.onclick=function(){
+  document.querySelectorAll('.tab').forEach(function(o){o.setAttribute('aria-selected',o===t?'true':'false');});
+  var k=t.getAttribute('data-p');
+  document.querySelectorAll('.pane').forEach(function(p){p.className='pane';});
+  var pane=document.getElementById('p-'+k);
+  pane.className='pane on';
+  var f=pane.querySelector('iframe');
+  if(!f.src&&f.getAttribute('data-src'))f.src=f.getAttribute('data-src');
+  document.getElementById('cap').textContent=CAPS[k];
+ };
+});
+</script>
+<script data-goatcounter="https://abbaphoto.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body></html>
