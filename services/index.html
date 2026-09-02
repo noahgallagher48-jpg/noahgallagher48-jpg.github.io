@@ -25,6 +25,12 @@ header{padding:64px 28px 0;max-width:980px;margin:0 auto}
     text-transform:uppercase;color:var(--ember);margin-bottom:12px}
 h1{font-weight:400;font-size:clamp(25px,3.4vw,36px);line-height:1.3;max-width:30ch}
 .lede{color:var(--smoke);font-size:16.5px;margin-top:14px;max-width:58ch}
+.doors{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px;max-width:900px}
+.door{display:block;border:1px solid var(--line);padding:16px 18px;text-decoration:none;color:var(--moon)}
+.door b{display:block;font-weight:400;font-size:19px;color:var(--emberHi);margin-bottom:4px}
+.door span{display:block;color:var(--smoke);font-size:14.5px;line-height:1.5}
+.door:hover{border-color:rgba(226,167,62,.5)}
+@media (max-width:640px){.doors{grid-template-columns:1fr}}
 .argument{margin-top:34px;max-width:62ch}
 .argument h2{font-size:22px;margin-bottom:10px}
 .argument p{color:var(--moon);opacity:.92;font-size:16px;margin-top:10px}
@@ -109,8 +115,11 @@ nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}
 <header>
   <p class=k>Services</p>
   <h1>I make uniquely excellent photos of what is important to you and I show you how to use them.</h1>
-  <p class=lede>Visual strategy and photography for mission-driven organizations and
-  individuals.</p>
+  <p class=lede>Two kinds of work.</p>
+  <div class=doors>
+    <a class=door href="#engagements"><b>Institutional fine art</b><span>The place and its people, photographed for the institution that owns the place: the residency, the book, the page, the prints. And also, I consult.</span></a>
+    <a class=door href="#personal"><b>Personal branding</b><span>For facilitators, leaders, and individuals whose work depends on being seen clearly. I photograph you in the spaces where and when your work happens.</span></a>
+  </div>
 
   <p class=k style="margin-top:30px">Three residencies, this summer</p>
   <div class=albums style="margin-top:12px">
@@ -265,6 +274,14 @@ nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}
   named deliverable and agreed before work begins. The price is the price.</p>
 </section>
 
+<section id=personal>
+  <h2>Personal branding</h2>
+  <p>For facilitators, leaders, and individuals whose work depends on being seen clearly.
+  I photograph you in the spaces where and when your work happens.</p>
+  <p class=albnote>One session, in your own places. The work is on
+  <a href="/work/masliansky/">the Masliansky page</a>.</p>
+</section>
+
 <section id=start>
   <div class=built>
     <h2>Write to me</h2>
@@ -282,6 +299,6 @@ nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}
   <p class=more><a href="/about/">More on the about page.</a></p>
 </section>
 
-<footer><p style="margin:0 auto 10px;max-width:60ch">Personal branding: I photograph you in the spaces where and when your work happens.</p>Noah Gallagher · <a href="mailto:noah@abba-photo.com">noah@abba-photo.com</a> · <a href="mailto:noah@abba-photo.com?subject=Personal%20branding">Personal branding</a> · <a href="https://www.linkedin.com/in/noah-gallagher-1bb62535/" rel="me noopener" target=_blank>LinkedIn</a> · <a href="https://www.instagram.com/ngallag12001/" rel="me noopener" target=_blank>Instagram</a></footer>
+<footer>Noah Gallagher · <a href="mailto:noah@abba-photo.com">noah@abba-photo.com</a> · <a href="https://www.linkedin.com/in/noah-gallagher-1bb62535/" rel="me noopener" target=_blank>LinkedIn</a> · <a href="https://www.instagram.com/ngallag12001/" rel="me noopener" target=_blank>Instagram</a></footer>
 <script data-goatcounter="https://abba-photo.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body></html>
