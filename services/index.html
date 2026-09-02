@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang=en><head><meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Visual strategy and photography for mission-driven organizations: assess what your images need to do, create what is missing, equip your team, put the library to work.">
+<meta name=description content="Residencies, focused days, and library engagements for mission-driven organizations and the people who lead them: what arrives, what it costs, and where it goes from there.">
 <link rel=canonical href="https://www.abba-photo.com/services/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Services · Abba Photo">
-<meta property="og:description" content="Assess what your images need to do, create what is missing, equip your team, put the library to work.">
+<meta property="og:description" content="Residencies, focused days, and library engagements for mission-driven organizations and the people who lead them: what arrives, what it costs, and where it goes from there.">
 <meta property="og:url" content="https://www.abba-photo.com/services/">
 <meta property="og:image" content="https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-63.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -41,34 +41,54 @@ a{color:var(--emberHi)}
 .albums img{width:100%;height:auto;display:block;aspect-ratio:3/2}
 .albums .cap{font-family:Futura,Avenir,sans-serif;font-size:11px;letter-spacing:.18em;
     text-transform:uppercase;color:var(--moon);margin-top:8px}
+.albums .arrived{color:var(--smoke);font-size:13px;line-height:1.45;margin-top:4px}
 .albums a:hover .cap{color:var(--emberHi)}
 .albnote{color:var(--smoke);font-size:13.5px;margin-top:14px;max-width:70ch}
 
-.move{border-top:1px solid var(--line);padding:18px 0 10px}
-.move h3{margin-bottom:2px}
-.move p{color:var(--moon);opacity:.88;font-size:15px}
-
-.pull{border-left:2px solid var(--ember);padding:4px 0 4px 20px;margin:24px 0 4px;
+.approach p{max-width:64ch}
+.pull{border-left:2px solid var(--ember);padding:4px 0 4px 20px;margin:22px 0 4px;
     font-size:17px;line-height:1.55;max-width:54ch;color:var(--moon)}
 
-.entry{border-top:1px solid var(--line);padding:16px 0 8px}
-.entry h3 .from{font-family:Futura,Avenir,sans-serif;font-size:11.5px;letter-spacing:.14em;
+.forwhom{color:var(--smoke);font-size:15px;margin-bottom:6px}
+.offer{border-top:1px solid var(--line);padding:18px 0 14px}
+.offer.lead{border-top:2px solid var(--ember);padding-top:22px}
+.offer h3 .from{font-family:Futura,Avenir,sans-serif;font-size:11.5px;letter-spacing:.14em;
     text-transform:uppercase;color:var(--ember)}
-.entry p{color:var(--smoke);font-size:15px;margin-top:2px}
+.offer dl{display:grid;grid-template-columns:96px minmax(0,1fr);gap:6px 18px;margin-top:10px;max-width:70ch}
+.offer dt{font-family:Futura,Avenir,sans-serif;font-size:10.5px;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--smoke);padding-top:4px}
+.offer dd{color:var(--moon);opacity:.9;font-size:15px}
+.offer dd.inv{color:var(--emberHi);opacity:1}
+.sub{margin-top:30px}
+.sub h3{color:var(--moon);font-size:16px;margin-bottom:4px}
+.sub p.note{color:var(--smoke);font-size:14.5px;margin-bottom:8px}
+.grow{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px;margin-top:10px}
+.grow div{border-top:1px solid var(--line);padding-top:12px}
+.grow h4{font-weight:400;font-size:16px;color:var(--emberHi);margin-bottom:2px}
+.grow p{color:var(--moon);opacity:.88;font-size:15px}
+.terms{color:var(--smoke);font-size:14px;margin-top:22px}
 
 .built{background:var(--sky);border:1px solid var(--line);padding:26px 28px;margin-top:44px}
 .built h2{font-size:19px}
 .built p{color:var(--smoke);font-size:15px}
+
+.who p{max-width:60ch}
+.who .more{font-size:14px;color:var(--smoke);margin-top:8px}
 
 .cta{display:inline-block;margin-top:24px;background:var(--ember);color:#071219;
 font-family:Futura,Avenir,sans-serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;
 padding:13px 24px;border-radius:3px;text-decoration:none}
 .cta:hover{background:var(--emberHi)}
 
+.aside-line{color:var(--smoke);font-size:13.5px;margin-top:26px;max-width:70ch}
+
 @media (max-width:640px){nav{flex-wrap:wrap;padding:12px 14px;row-gap:4px}
 nav .links{display:flex;flex-wrap:wrap;gap:4px 14px}
 nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}
-.albums{grid-template-columns:1fr}}
+.albums{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:6px;-webkit-overflow-scrolling:touch}
+.albums a{flex:0 0 78%;scroll-snap-align:start}
+.offer dl{grid-template-columns:82px minmax(0,1fr)}
+.grow{grid-template-columns:1fr}}
 
 .hail{position:fixed;top:64px;right:16px;z-index:9;max-width:240px;
  background:var(--sky,#0E2430);border:1px solid var(--line,rgba(237,242,239,.12));
@@ -77,14 +97,11 @@ nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}
  font-family:Futura,Avenir,sans-serif;font-size:10.5px;letter-spacing:.16em;
  text-transform:uppercase;padding:9px 14px;border-radius:3px;text-decoration:none}
 .hail a:hover{background:var(--emberHi,#F2BA6B)}
-@media (max-width:1180px){.hail{position:static;max-width:640px;margin:26px 28px 0}}
+@media (max-width:1439px){.hail{position:static;max-width:640px;margin:26px 0 0;padding-left:18px}
+ .hailwrap{max-width:980px;margin:0 auto;padding:0 28px}}
 </style></head><body>
 <nav><a class=brand href="/">ABBA PHOTO</a>
  <span class=links><a href="/#work">Work</a><a href="/process/">Process</a><a href="/services/">Services</a><a href="/about/">About</a><a href="mailto:noah@abba-photo.com">Contact</a></span></nav>
-<aside class=hail>If you're looking through and thinking
-"I would love to have images like this."
-<a href="mailto:noah@abba-photo.com?subject=Visual%20readiness%20conversation">Start the conversation</a></aside>
-
 
 <header>
   <p class=k>Services</p>
@@ -95,21 +112,32 @@ nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}
 
   <div class=albums>
     <a href="/work/interlaken/">
-      <img src="https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-63.jpg"
+      <img src="https://www.abba-photo.com/interlaken-campscapes/img/thumb/CILWEB1-63.jpg"
+           srcset="https://www.abba-photo.com/interlaken-campscapes/img/thumb/CILWEB1-63.jpg 900w, https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-63.jpg 2560w"
+           sizes="(max-width:640px) calc(78vw - 44px), (max-width:980px) 31vw, 310px" width=2560 height=1708 fetchpriority=high
            alt="Campers in white crossing the wooden bridge at Camp Interlaken">
-      <div class=cap>Camp Interlaken JCC</div></a>
+      <div class=cap>Camp Interlaken JCC</div>
+      <div class=arrived>Arrived: a library organized by use, a field guide, two hardcover book layouts.</div></a>
     <a href="/work/ramah/">
-      <img src="https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R106.jpg"
+      <img src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R106.jpg"
+           srcset="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R106.jpg 900w, https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R106.jpg 2560w"
+           sizes="(max-width:640px) calc(78vw - 44px), (max-width:980px) 31vw, 310px" width=2560 height=1708 loading=lazy
            alt="Two campers in white walking a sunlit path at Ramah in the Rockies">
-      <div class=cap>Ramah in the Rockies</div></a>
+      <div class=cap>Ramah in the Rockies</div>
+      <div class=arrived>Arrived: an image guide organized by use, donor-book layouts, a guest-room print program.</div></a>
     <a href="/work/kingswood/">
-      <img src="https://www.abba-photo.com/camp-kingswood/img/present/Kwood827-46.jpg"
+      <img src="https://www.abba-photo.com/camp-kingswood/img/thumb/Kwood827-46.jpg"
+           srcset="https://www.abba-photo.com/camp-kingswood/img/thumb/Kwood827-46.jpg 900w, https://www.abba-photo.com/camp-kingswood/img/present/Kwood827-46.jpg 2560w"
+           sizes="(max-width:640px) calc(78vw - 44px), (max-width:980px) 31vw, 310px" width=2560 height=1707 loading=lazy
            alt="The waterfront and swim dock at Camp Kingswood">
-      <div class=cap>Camp Kingswood</div></a>
+      <div class=cap>Camp Kingswood</div>
+      <div class=arrived>Arrived: a library with every file carrying its own credentials, print guidance on every frame, a book in layout.</div></a>
   </div>
-  <p class=albnote>Three residencies. Each page shows individual frames and the
-  full collection, with smaller collections organized by use inside. Examples
-  from art production will be added to these pages as they are produced.</p>
+  <p class=albnote>Three residencies. Each page shows a selection and what the camp
+  received. The rest of the work, including individuals, is on
+  <a href="/#work">the work page</a>.</p>
+  <p class=albnote style="margin-top:8px">The residency from $6,500. The focused day from $1,500.
+  <a href="#engagements">What each includes</a>.</p>
 </header>
 
 <section id=problem>
@@ -123,81 +151,107 @@ nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}
   conversation is worth having.</p>
 </section>
 
-<section id=method>
-  <h2>The method</h2>
-  <div class=move>
-    <h3>Assess</h3>
-    <p>What do your images need to do? We map your priorities to the visual
-    evidence they require and find what is missing. Sometimes the next step is
-    work your own team can do.</p>
-  </div>
-  <div class=move>
-    <h3>Create</h3>
-    <p>A focused day when the moment is narrow and known. A residency when the
-    institution needs breadth: people, place, program, and the hours a day
-    visit never sees.</p>
-    <div class=pull>You're not photographing activities. You're photographing
-    kids and counselors and members of the community engaging with the activity
-    as a context for it.</div>
-  </div>
-  <div class=move>
-    <h3>Equip</h3>
-    <p>A working session and a field guide for your media team ride with camp
-    engagements. A managed season-long system is its own engagement.</p>
-  </div>
-  <div class=move>
-    <h3>Activate</h3>
-    <p>Selected sequences become campaign collections, donor books, calendars,
-    fine-art prints, and gifts. Each starts with the audience, never with a
-    catalog.</p>
-  </div>
+<div class=hailwrap><aside class=hail>If you're looking through and thinking
+"I would love to have images like this."
+<a href="mailto:noah@abba-photo.com?subject=Abba%20Photo" data-goatcounter-click="services-hail-start">Start the conversation</a></aside></div>
+
+<section id=approach class=approach>
+  <h2>The approach</h2>
+  <p>Every engagement starts with one question: how do you want people to feel
+  when they look at these photos? Not this or that program or activity. Most of
+  what I capture is in between. Before the shoot we settle what the images need to
+  do and what you already have. I make what is missing. The delivery comes back organized by use. Your media team gets a working session
+  and a field guide. Selected sequences become campaign collections, donor books,
+  calendars, fine-art prints, and gifts.</p>
+  <div class=pull>You're not photographing activities. You're photographing
+  kids and counselors and members of the community engaging with the activity
+  as a context for it.</div>
 </section>
 
 <section id=engagements>
-  <h2>Where organizations come in</h2>
-  <div class=entry>
+  <h2>The engagements</h2>
+  <p class=forwhom>I work with organizations and individuals whose work depends on
+  being seen and felt.</p>
+
+  <div class="offer lead" id=residency>
     <h3>The residency <span class=from>· three nights · from $6,500</span></h3>
-    <p>A deep, deployable library organized by use, media-team session
-    included. Extends to retreat coverage and fine-art print work.</p>
+    <dl>
+      <dt>Best for</dt><dd>An institution that needs breadth: people, place, program,
+      and the hours a day visit never sees.</dd>
+      <dt>Includes</dt><dd>Three nights on-site to build a deep, deployable library that
+      holds up across years and channels. Organized by what each image is for, not the
+      order I shot it. A working session and a field guide for your media team. Print
+      guidance. Extends to retreat coverage and fine-art print work.</dd>
+      <dt>Investment</dt><dd class=inv>From $6,500.</dd>
+    </dl>
   </div>
-  <div class=entry>
+
+  <div class=sub>
+    <h3>Two other ways in</h3>
+    <p class=note>Narrower than a residency. Delivered the same way.</p>
+  </div>
+
+  <div class=offer id=focused-day>
     <h3>The focused day <span class=from>· from $1,500</span></h3>
-    <p>One bounded objective: a campaign, a viewbook, a launch, an event.</p>
+    <dl>
+      <dt>Best for</dt><dd>One bounded objective, already narrow and known: a campaign,
+      a viewbook, a launch, an event.</dd>
+      <dt>Includes</dt><dd>A curated set for that one need, organized by use and ready
+      to deploy.</dd>
+      <dt>Investment</dt><dd class=inv>From $1,500.</dd>
+    </dl>
   </div>
-  <div class=entry>
+
+  <div class=offer id=library>
     <h3>The library engagement</h3>
-    <p>Good photographs, unusable in practice. I organize, select, credential,
-    and prepare what you already own.</p>
+    <dl>
+      <dt>Best for</dt><dd>Good photographs you already own, unusable in practice.</dd>
+      <dt>Includes</dt><dd>I organize, select, credential, and prepare what you have.
+      You open the delivery already knowing which image is which job.</dd>
+      <dt>Investment</dt><dd class=inv>Scoped to the size of the library and agreed
+      before work begins.</dd>
+    </dl>
   </div>
-  <div class=entry>
-    <h3>The media team system</h3>
-    <p>Daily capture that adds up: coverage priorities set with leadership, a
-    workable model for staff, reviews across the season.</p>
+
+  <div class=sub>
+    <h3>Where it goes from there</h3>
+    <p class=note>Two kinds of work grow out of these engagements. Each is scoped to
+    a named deliverable and agreed before work begins.</p>
   </div>
-  <div class=entry>
-    <h3>The stewardship project</h3>
-    <p>Books, calendars, print programs, and campaign collections built for
-    donors, patrons, and alumni.</p>
+  <div class=grow>
+    <div id=media-team>
+      <h4>The media team system</h4>
+      <p>Daily capture that adds up: coverage priorities set with leadership, a
+      workable model for staff, reviews across the season.</p>
+    </div>
+    <div id=stewardship>
+      <h4>Stewardship</h4>
+      <p>Books, calendars, print programs, and campaign collections built for
+      donors, patrons, and alumni.</p>
+    </div>
   </div>
-  <div class=entry>
-    <h3>Personal branding</h3>
-    <p>You, photographed in the spaces where and when your work happens.</p>
-  </div>
-  <p style="color:var(--smoke);font-size:14px;margin-top:18px">Entry prices are
-  public; everything beyond entry is scoped to a named deliverable and agreed
-  before work begins. The price is the price.</p>
+
+  <p class=terms>Entry prices are public; everything beyond entry is scoped to a
+  named deliverable and agreed before work begins. The price is the price.</p>
 </section>
 
 <section id=start>
   <div class=built>
-    <h2>Start with one priority</h2>
-    <p>Bring one institutional priority and a sample of how your images get
-    used today. I will tell you where the gap is and the smallest sensible
-    next step.</p>
-    <p><a class=cta href="mailto:noah@abba-photo.com?subject=Visual%20readiness%20conversation">Start the conversation</a></p>
+    <h2>Write to me</h2>
+    <p>Tell me about your work and your site. I will tell you where the gap is
+    and the smallest sensible next step.</p>
+    <p><a class=cta href="mailto:noah@abba-photo.com?subject=Abba%20Photo" data-goatcounter-click="services-start">Start the conversation</a></p>
   </div>
 </section>
 
-<footer>Noah Gallagher · <a href="mailto:noah@abba-photo.com">noah@abba-photo.com</a></footer>
+<section id=who class=who>
+  <h2>Noah Gallagher</h2>
+  <p>I ran camps for about twenty years before I photographed them. Ranch Camp in
+  Denver, Tel Yehudah, CYJ in the Midwest. I bring that up because the seeing is
+  the hard part of this, not the camera.</p>
+  <p class=more><a href="/about/">More on the about page.</a></p>
+</section>
+
+<footer><p style="margin:0 auto 10px;max-width:60ch">Personal branding: I photograph you in the spaces where and when your work happens.</p>Noah Gallagher · <a href="mailto:noah@abba-photo.com">noah@abba-photo.com</a> · <a href="mailto:noah@abba-photo.com?subject=Personal%20branding">Personal branding</a> · <a href="https://www.linkedin.com/in/noah-gallagher-1bb62535/" rel="me noopener" target=_blank>LinkedIn</a> · <a href="https://www.instagram.com/ngallag12001/" rel="me noopener" target=_blank>Instagram</a></footer>
 <script data-goatcounter="https://abba-photo.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body></html>
