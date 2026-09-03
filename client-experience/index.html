@@ -39,6 +39,7 @@ footer a{color:#EDE9E1}
  <button class=tab role=tab data-p=rr aria-selected=false>Ramah in the Rockies</button>
  <button class=tab role=tab data-p=vote aria-selected=false>The community vote</button>
  <button class=tab role=tab data-p=hub aria-selected=false>Inside an engagement</button>
+ <button class=tab role=tab data-p=guide aria-selected=false>The field guide</button>
 </div>
 
 <p class=cap id=cap>What they received.</p>
@@ -49,6 +50,7 @@ footer a{color:#EDE9E1}
  <div class=pane id=p-rr><iframe class=frame loading=lazy title="Ramah in the Rockies field guide" data-src="/ramah-rockies-guide/"></iframe></div>
  <div class=pane id=p-vote><iframe class=frame loading=lazy title="The Interlaken community favorites vote" data-src="/interlaken-campscapes/favorites.html"></iframe></div>
  <div class=pane id=p-hub><iframe class=frame loading=lazy title="A mid-engagement hub, example" data-src="hub-example.html"></iframe></div>
+ <div class=pane id=p-guide><iframe class=frame loading=lazy title="The field guide, Camp Interlaken's edition" data-src="/interlaken-campscapes/field-guide.html"></iframe></div>
 </div>
 
 <footer>Photographs by Noah Gallagher · <a href="https://www.abba-photo.com">abba-photo.com</a></footer>
@@ -59,7 +61,8 @@ var CAPS={
  il:"What they received.",
  rr:"What they received.",
  vote:"The Interlaken community, voting on its own photographs. Live now, open through Labor Day.",
- hub:"\u201cInside an engagement\u201d is an example of what a client hub page looks like mid-engagement."};
+ hub:"\u201cInside an engagement\u201d is an example of what a client hub page looks like mid-engagement.",
+ guide:"The field guide. This one is Camp Interlaken's. Every camp's is built on the same shape and customized to its program, its gear, and its team."};
 document.querySelectorAll('.tab').forEach(function(t){
  t.onclick=function(){
   document.querySelectorAll('.tab').forEach(function(o){o.setAttribute('aria-selected',o===t?'true':'false');});
