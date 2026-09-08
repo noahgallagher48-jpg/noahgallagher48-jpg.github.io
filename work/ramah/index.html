@@ -31,6 +31,10 @@ nav .links a:hover,nav .links a:focus{color:var(--emberHi)}
     text-transform:uppercase;color:var(--ember);margin-bottom:12px}
 .show h1{font-weight:400;font-size:clamp(28px,4vw,44px);line-height:1.25}
 .show .cap{margin-top:12px;color:var(--smoke);font-size:13.5px;font-style:italic}
+.show .pause{position:absolute;top:16px;right:16px;z-index:3;width:34px;height:34px;
+    border:1px solid rgba(237,242,239,.4);background:rgba(7,18,25,.55);color:var(--moon);
+    border-radius:50%;font-size:14px;line-height:1;cursor:pointer}
+.show .pause:focus-visible{outline:2px solid var(--ember);outline-offset:2px}
 .lede{background:var(--sky);padding:64px 28px}
 .lede p{max-width:640px;margin:0 auto;font-size:clamp(17px,2vw,20px);line-height:1.65}
 .using{background:var(--sky);padding:0 28px 72px}
@@ -60,14 +64,14 @@ footer a{color:var(--moon)}
 nav .links{display:flex;flex-wrap:wrap;gap:4px 14px}
 nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}}
 
-.hail{position:fixed;top:64px;right:16px;z-index:9;max-width:240px;
+.hail{position:fixed;bottom:16px;top:auto;right:16px;z-index:9;max-width:240px;
  background:var(--sky,#0E2430);border:1px solid var(--line,rgba(237,242,239,.12));
  padding:16px 18px;font-size:14.5px;line-height:1.5;color:var(--moon,#EDF2EF)}
 .hail a{display:inline-block;margin-top:10px;background:var(--ember,#E39A3B);color:#071219;
  font-family:Futura,Avenir,sans-serif;font-size:10.5px;letter-spacing:.16em;
  text-transform:uppercase;padding:9px 14px;border-radius:3px;text-decoration:none}
 .hail a:hover{background:var(--emberHi,#F2BA6B)}
-@media (max-width:1180px){.hail{position:static;max-width:640px;margin:26px 28px 0}}
+@media (max-width:1180px){.hail{position:fixed;top:auto;bottom:16px;left:16px;right:16px;max-width:none;margin:0}}
 </style></head><body>
 <nav><a class=brand href="/">ABBA PHOTO</a>
  <span class=links><a href="/#work">Work</a><a href="/process/">Process</a><a href="/services/">Services</a><a href="/about/">About</a><a href="mailto:noah@abba-photo.com">Contact</a></span></nav>
@@ -77,12 +81,13 @@ nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}}
 
 
 <header class=show id=show>
-  <img class=on src="https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R063.jpg" srcset="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R063.jpg 900w, https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R063.jpg 2560w" sizes="100vw" alt="Ramah in the Rockies">
+  <img class=on data-cap="The flags and the court under the Milky Way." src="https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R063.jpg" srcset="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R063.jpg 900w, https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R063.jpg 2560w" sizes="100vw" alt="Ramah in the Rockies">
   <img src="https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R002.jpg" srcset="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R002.jpg 900w, https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R002.jpg 2560w" sizes="100vw" alt="Ramah in the Rockies">
   <img src="https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R112.jpg" srcset="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R112.jpg 900w, https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R112.jpg 2560w" sizes="100vw" alt="Ramah in the Rockies">
   <img src="https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R145.jpg" srcset="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R145.jpg 900w, https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R145.jpg 2560w" sizes="100vw" alt="Ramah in the Rockies">
   <img src="https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R090.jpg" srcset="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R090.jpg 900w, https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R090.jpg 2560w" sizes="100vw" alt="Ramah in the Rockies">
   <div class=veil></div>
+  <button type=button class=pause id=showPause aria-label="Pause slideshow">⏸</button>
   <div class=say>
     <p class=k>Ramah in the Rockies · Sedalia, Colorado</p>
     <h1>Six days in the Rockies, June 2026</h1>
@@ -99,17 +104,17 @@ nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}}
     <h2>A selection</h2>
     <p class=sub>From the guide.</p>
     <div class=cells>
-      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R111.jpg" alt="">
-      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R077.jpg" alt="">
-      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R033.jpg" alt="">
-      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R066.jpg" alt="">
-      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R109.jpg" alt="">
-      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R117.jpg" alt="">
-      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R098.jpg" alt="">
-      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R039.jpg" alt="">
-      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R051.jpg" alt="">
-      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R073.jpg" alt="">
-      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R002.jpg" alt="">
+      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R111.jpg" alt="A photograph from the guide, Ramah in the Rockies, Sedalia, Colorado">
+      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R077.jpg" alt="Ramah in the Rockies, Sedalia, Colorado">
+      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R033.jpg" alt="A photograph from the guide, Ramah in the Rockies, Sedalia, Colorado">
+      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R066.jpg" alt="Ramah in the Rockies, Sedalia, Colorado">
+      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R109.jpg" alt="A photograph from the guide, Ramah in the Rockies, Sedalia, Colorado">
+      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R117.jpg" alt="Ramah in the Rockies, Sedalia, Colorado">
+      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R098.jpg" alt="A photograph from the guide, Ramah in the Rockies, Sedalia, Colorado">
+      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R039.jpg" alt="Ramah in the Rockies, Sedalia, Colorado">
+      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R051.jpg" alt="A photograph from the guide, Ramah in the Rockies, Sedalia, Colorado">
+      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R073.jpg" alt="Ramah in the Rockies, Sedalia, Colorado">
+      <img loading=lazy src="https://www.abba-photo.com/ramah-rockies-guide/img/thumb/Ramah2026_R002.jpg" alt="Ramah in the Rockies, Sedalia, Colorado">
     </div>
   </div>
 </section>
@@ -132,8 +137,10 @@ nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}}
       <dt>The summer library</dt>
       <dd>Every delivered photograph in two sizes: full resolution for print, web for screens.</dd>
       <dt>The donor book</dt>
-      <dd>Layouts designed to press spec and printed through the lab.</dd>
+      <dd>Layouts designed to press spec, printed through the lab at cost when the camp orders.</dd>
     </dl>
+    <p>See the guides and both book layouts, as the clients received them, on
+    <a href="/client-experience/">the client experience page</a>.</p>
   </div>
 </section>
 
@@ -141,9 +148,19 @@ nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}}
 <footer>Noah Gallagher · <a href="mailto:noah@abba-photo.com">noah@abba-photo.com</a></footer>
 
 <script>
-var imgs=document.querySelectorAll('#show img'),i=0;
-setInterval(function(){imgs[i].classList.remove('on');i=(i+1)%imgs.length;
-  imgs[i].classList.add('on');},4600);
+(function(){
+var imgs=document.querySelectorAll('#show img'),cap=document.querySelector('#show .cap'),
+  btn=document.getElementById('showPause'),i=0,timer=null,
+  reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function advance(){imgs[i].classList.remove('on');i=(i+1)%imgs.length;
+  imgs[i].classList.add('on');if(cap)cap.textContent=imgs[i].dataset.cap||imgs[i].alt;}
+function play(){if(timer)return;timer=setInterval(advance,4600);
+  if(btn){btn.textContent='⏸';btn.setAttribute('aria-label','Pause slideshow');}}
+function pause(){clearInterval(timer);timer=null;
+  if(btn){btn.textContent='▶';btn.setAttribute('aria-label','Play slideshow');}}
+if(btn)btn.addEventListener('click',function(){timer?pause():play();});
+if(!reduce)play();else if(btn){btn.textContent='▶';btn.setAttribute('aria-label','Play slideshow');}
+})();
 </script>
 <script data-goatcounter="https://abba-photo.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body></html>
