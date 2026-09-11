@@ -48,13 +48,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.abba-photo.com/process/</loc>
-    <image:image>
-      <image:loc>https://www.abba-photo.com/img/process/use-guide.jpg</image:loc>
-      <image:caption>The image guide: every frame with its labels and print sizes</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://www.abba-photo.com/services/</loc>
     <image:image>
       <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-63.jpg</image:loc>
