@@ -14,7 +14,8 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--treeline);color:var(--moon);font-family:Charter,Georgia,serif;
      font-size:16px;line-height:1.6}
-nav{display:flex;justify-content:space-between;align-items:center;padding:18px 28px}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;
+    align-items:center;padding:18px 28px;mix-blend-mode:screen}
 nav .brand{font-family:Futura,Avenir,sans-serif;font-weight:500;letter-spacing:.34em;
     font-size:13px;color:var(--moon);text-decoration:none}
 nav .links a{font-family:Futura,Avenir,sans-serif;font-size:11px;letter-spacing:.22em;
@@ -129,6 +130,8 @@ nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}
 .hero .doorbtns .cta{margin-top:0}
 .hero .cta.ghost{background:transparent;color:#f3ede0;border:1px solid rgba(243,237,224,.7)}
 .hero .cta.ghost:hover{background:rgba(243,237,224,.12)}
+.hero h1.doors{max-width:none;margin:0 auto}
+.hero .say{text-align:center}
 </style></head><body>
 <nav><a class=brand href="/">ABBA PHOTO</a>
  <span class=links><a href="/#work">Work</a><a href="/services/">Services</a><a href="/about/">About</a><a href="mailto:noah@abba-photo.com">Contact</a></span></nav>
