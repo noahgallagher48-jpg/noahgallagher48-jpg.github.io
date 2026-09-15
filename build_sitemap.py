@@ -23,7 +23,8 @@ BASE = "https://www.abba-photo.com"
 def pages():
     for p in sorted(glob.glob(os.path.join(HERE, "*.html")) +
                     glob.glob(os.path.join(HERE, "*", "index.html")) +
-                    glob.glob(os.path.join(HERE, "work", "*", "index.html"))):
+                    glob.glob(os.path.join(HERE, "work", "*", "index.html")) +
+                    glob.glob(os.path.join(HERE, "services", "*", "index.html"))):
         if os.sep + "preview" + os.sep in p:
             continue
         src = open(p).read()
