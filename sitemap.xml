@@ -54,7 +54,11 @@
     <loc>https://www.abba-photo.com/services/</loc>
     <image:image>
       <image:loc>https://www.abba-photo.com/interlaken-campscapes/img/present/CILWEB1-63.jpg</image:loc>
-      <image:caption>Campers in white crossing the wooden bridge at Camp Interlaken</image:caption>
+      <image:caption>Campers crossing the wooden bridge at Camp Interlaken</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.abba-photo.com/masliansky-neighborhood-session/img/present/F05.jpg</image:loc>
+      <image:caption>Aaron Masliansky in a kitchen he is listing, Chicago</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.abba-photo.com/ramah-rockies-guide/img/present/Ramah2026_R106.jpg</image:loc>
