@@ -108,12 +108,23 @@ nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}
 .hail a:hover{background:var(--emberHi,#F2BA6B)}
 @media (max-width:1499px){.hail{position:fixed;top:auto;bottom:16px;left:16px;right:16px;max-width:none;margin:0}
  .hailwrap{max-width:980px;margin:0 auto;padding:0 28px}}
+.tabs{display:flex;gap:10px;margin-top:26px;flex-wrap:wrap}
+.tabs button{font-family:Futura,Avenir,sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  padding:12px 18px;border:1px solid var(--line);border-radius:3px;background:transparent;color:var(--moon);cursor:pointer}
+.tabs button.on{background:var(--ember);border-color:var(--ember);color:#071219}
+.tabs button:hover:not(.on){border-color:var(--emberHi);color:var(--emberHi)}
+.panel[hidden]{display:none}
 </style></head><body>
 <nav><a class=brand href="/">ABBA PHOTO</a>
  <span class=links><a href="/#work">Work</a><a href="/services/">Services</a><a href="/about/">About</a><a href="mailto:noah@abba-photo.com">Contact</a></span></nav>
 <section id=intro>
   <p class=k>Services</p>
   <h1>I make photographs of what is important to you, and I show you how to use them.</h1>
+  <div class=tabs role=tablist>
+    <button type=button class=on data-tab=camps role=tab aria-selected=true>Camps and Institutions</button>
+    <button type=button data-tab=branding role=tab aria-selected=false>Personal Branding</button>
+  </div>
+<div class=panel id=camps>
   <p class=lede>For camps and community institutions. I ran camps for about twenty years before I photographed them.</p>
   <p class=albnote><b>Summer 2027 is booking now.</b> <a class=cta href="mailto:noah@abba-photo.com?subject=Summer%202027" data-goatcounter-click="services-top-start">Write to me</a></p>
   <p class=k style="margin-top:30px">Three residencies, summer 2026</p>
@@ -141,7 +152,6 @@ nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}
       <div class=arrived>The full library within two weeks, sized for print, with the camp's name, date and credit in every file. A book in the making.</div></a>
   </div>
   <p class=albnote>A selection from each residency. The guides and the book layouts are on <a href="/client-experience/">the client experience page</a>.</p>
-</section>
 
 <section id=engagements>
   <p class=k>Engagements</p>
@@ -169,10 +179,35 @@ nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}
 
   <p class=note style="margin-top:26px">After the photographs, five more things, each on <a href="/services/includes/#strategy">the includes page</a> with its price: the store, with a share of every sale to you; the books, sold from your page the same way; framed limited editions; stewardship gifts; consultation at $250 an hour. The media team, run as a system, is there too, quoted with the season. A sample proposal, the way a client receives it, is at <a href="/proposal/">abba-photo.com/proposal</a>.</p>
 </section>
+</div>
+<div class=panel id=branding hidden>
+  <p class=lede>For facilitators, leaders, and individuals whose work depends on being seen clearly. I photograph you in the spaces where and when your work happens.</p>
+  <p class=k style="margin-top:30px">Two sessions, summer 2026</p>
+  <div class=albums style="margin-top:12px">
+    <a href="/work/masliansky/">
+      <img src="https://www.abba-photo.com/masliansky-neighborhood-session/img/thumb/F01.jpg" sizes="(max-width:640px) calc(78vw - 44px), (max-width:980px) calc((100vw - 84px) / 3), 299px" loading=lazy alt="Aaron Masliansky, Chicago">
+      <div class=cap>Aaron Masliansky · Chicago</div>
+      <div class=arrived>A neighborhood session: the listings, the yard signs, the train line into the city. The frames went onto his own surfaces the week they arrived.</div></a>
+    <a href="/work/ceremony/">
+      <img src="https://www.abba-photo.com/ceremony-is-medicine/img/NKatzWeb2-22.jpg" sizes="(max-width:640px) calc(78vw - 44px), (max-width:980px) calc((100vw - 84px) / 3), 299px" loading=lazy alt="Naomi Katz, Ceremony Is Medicine">
+      <div class=cap>Naomi Katz · Ceremony Is Medicine</div>
+      <div class=arrived>A practice, made visible.</div></a>
+  </div>
+  <p class=albnote>A selection from each session.</p>
 
-<section id=personal>
-  <p class=note>Personal branding, for facilitators and leaders, has <a href="/services/personal-branding/">its own page</a>.</p>
+<section id=session>
+  <p class=k>The session</p>
+  <div class=offer>
+    <h3>One session <span class=from>· in your own places</span></h3>
+    <p>You get the full take in two sizes, on a page you can forward. Headshots cut to each destination: the podcast art, the profiles, the print uses. Full-resolution masters, yours to keep, with your name and rights inside every file.</p>
+    <p class=inv>$1,600. Travel at cost, agreed before the session.</p>
+  </div>
+  <p class=albnote><a class=cta href="mailto:noah@abba-photo.com?subject=Personal%20branding" data-goatcounter-click="services-branding-start">Write to me</a></p>
 </section>
+</div>
+</section>
+
+
 
 <section id=start>
   <div class=built>
@@ -191,4 +226,13 @@ nav .links a{margin-left:0;font-size:10.5px;letter-spacing:.13em}
 
 <footer>Noah Gallagher · <a href="mailto:noah@abba-photo.com">noah@abba-photo.com</a> · <a href="https://www.linkedin.com/in/noah-gallagher-1bb62535/" rel="me noopener" target=_blank>LinkedIn</a> · <a href="https://www.instagram.com/ngallag12001/" rel="me noopener" target=_blank>Instagram</a></footer>
 <script data-goatcounter="https://abba-photo.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+(function(){
+var bs=document.querySelectorAll('.tabs button'),ps={camps:document.getElementById('camps'),branding:document.getElementById('branding')};
+function show(k){if(!ps[k])k='camps';bs.forEach(function(b){var on=b.dataset.tab===k;b.classList.toggle('on',on);b.setAttribute('aria-selected',on)});
+  for(var x in ps)ps[x].hidden=(x!==k);}
+bs.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.tab);history.replaceState(null,'','#'+b.dataset.tab);});});
+show((location.hash||'').replace('#',''));window.addEventListener('hashchange',function(){show(location.hash.replace('#',''))});
+})();
+</script>
 </body></html>
