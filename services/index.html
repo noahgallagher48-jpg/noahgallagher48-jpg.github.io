@@ -273,7 +273,7 @@ nav .brand,nav .links a{text-shadow:0 1px 8px rgba(0,0,0,.55),0 0 2px rgba(0,0,0
 <script>
 (function(){
 var bs=document.querySelectorAll('.doorbtns [data-tab]'),ps={camps:document.getElementById('camps'),branding:document.getElementById('branding')};
-function show(k){if(!ps[k])k='camps';
+function show(k){if(!ps[k]){if(document.querySelector('.doorbtns [data-tab]:not(.ghost)'))return;k='camps';}
   bs.forEach(function(b){var on=b.dataset.tab===k;b.classList.toggle('ghost',!on);b.setAttribute('aria-selected',on)});
   for(var x in ps)ps[x].hidden=(x!==k);
   document.querySelectorAll('#hero img.hs').forEach(function(im){im.classList.toggle('on',im.dataset.for===k)});
@@ -286,7 +286,7 @@ show((location.hash||'').replace('#',''));window.addEventListener('hashchange',f
 (function(){var f=document.getElementById('wf');if(!f)return;
 f.addEventListener('submit',async function(e){e.preventDefault();var b=f.querySelector('button');b.disabled=true;b.textContent='Sending';
 try{var r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(f)))});
-if(r.ok){document.getElementById('wfok').hidden=false;b.textContent='Sent';f.querySelectorAll('input:not([type=hidden]),textarea').forEach(function(i){i.value=''});}else{throw 0}}
+if(r.ok){var ok=document.getElementById('wfok');ok.textContent='Sent. I read these myself and answer within a day.';ok.hidden=false;b.textContent='Sent';f.querySelectorAll('input:not([type=hidden]),textarea').forEach(function(i){i.value=''});}else{throw 0}}
 catch(x){b.disabled=false;b.textContent='Send';document.getElementById('wfok').hidden=false;document.getElementById('wfok').textContent='That did not send. Email me at noah@abba-photo.com.';}});})();
 </script>
 </body></html>
