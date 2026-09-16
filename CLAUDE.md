@@ -18,7 +18,8 @@ site, every other project repo serves under it (/interlaken-campscapes/, /camp-k
 4. Voice rules as everywhere: no em dashes, no bravado, Noah's lines are canon.
 5. Outward links use the canonical domain (https://www.abba-photo.com/...), never
    github.io forms.
-6. This is Noah's PUBLIC face and indexable. Client-sensitive material never lands here;
+6. **Never cut off heads (Noah, 2026-09-16).** Any photograph with a person in it that the site crops (the home and services heroes, work-page slideshows, cards) keeps the whole head in frame at phone portrait and desktop wide alike. Set `object-position` per frame, render both widths before pushing, and if a frame cannot hold the head at both, it goes in a grid, not a hero.
+7. This is Noah's PUBLIC face and indexable. Client-sensitive material never lands here;
    client hubs stay noindex in their own repos.
 
 ## Verify after push
