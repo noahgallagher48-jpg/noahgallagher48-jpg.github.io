@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "description": "The fallback function runs only for paths that are not photographs. Image folders are served straight from Cloudflare's edge and never touch the function.",
+  "include": ["/*"],
+  "exclude": [
+    "/img/*", "/sandusky/img/*",
+    "/camp-kingswood/img/*",
+    "/ceremony-is-medicine/img/*", "/ceremony-is-medicine/nest/*",
+    "/family-2026/img/*", "/family-2026/thumb/*", "/family-2026/sandusky/*",
+    "/interlaken-campscapes/img/*", "/interlaken-campscapes/first-look/*", "/interlaken-campscapes/film/*",
+    "/masliansky-neighborhood-session/img/*",
+    "/ramah-rockies-guide/img/*", "/ramah-rockies-guide/first-look/*", "/ramah-rockies-guide/reel/*"
+  ]
+}

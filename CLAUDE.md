@@ -1,9 +1,23 @@
 # abba-site — operating instructions
 
-This repo is www.abba-photo.com (GitHub Pages user site `noahgallagher48-jpg.github.io`,
-custom domain via CNAME). Push to `main` = deploy. Because the domain sits on the user
-site, every other project repo serves under it (/interlaken-campscapes/, /camp-kingswood/,
-/masliansky-neighborhood-session/, /ceremony-is-medicine/, ...).
+This repo is www.abba-photo.com. Push to `main` = deploy.
+
+## Hosting: Cloudflare Pages (from 2026-09-23; GitHub Pages before that)
+Cloudflare Pages project `abba-photo`, connected to this repo on GitHub. Every push to `main`
+runs `bash _cf/assemble.sh` and publishes the `_site/` it builds. The published site is this
+repo at the root plus each project repo at its own path (`/interlaken-campscapes/`,
+`/camp-kingswood/`, `/ramah-rockies-guide/`, `/masliansky-neighborhood-session/`,
+`/ceremony-is-medicine/`, `/media-team-field-guide/`, `/cyj-field-guide/`, `/family-2026/`),
+exactly the layout GitHub Pages served. The list of project repos lives in `_cf/assemble.sh`;
+a new project repo is added there. A push to a project repo alone does not redeploy; push
+anything to this repo (or press "Retry deployment" in the Cloudflare dashboard) to pick it up.
+`_*` folders are not published (the same rule GitHub's Jekyll applied), `*.md` and
+`build_sitemap.py` are not published, and no file over 25 MiB is published (Cloudflare's limit).
+`functions/[[path]].js` is a safety net for the move: any path Cloudflare does not have is
+fetched from the old GitHub Pages site. Delete it once GitHub Pages is switched off.
+`_cf/_routes.json` keeps image folders away from that function; `_cf/_headers` sets two headers.
+DNS for the domain: Cloudflare zone abba-photo.com (was NS1 via Squarespace). Google Workspace
+MX records for noah@abba-photo.com must always survive a DNS change.
 
 ## Hard rules
 1. **After ANY edit to HTML in this repo, run `python3 build_sitemap.py` before
